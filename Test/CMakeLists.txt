@@ -15,3 +15,14 @@ target_link_libraries(${PROJECT_NAME}
     redis++  mysqlclient mysqlcppconn pthread
 )
 
+
+add_executable(threadPoolTest
+    threadPool.cpp
+)
+
+
+
+target_link_libraries(threadPoolTest
+    # redis++  mysqlclient mysqlcppconn
+    pthread
+)
